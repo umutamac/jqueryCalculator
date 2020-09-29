@@ -78,7 +78,28 @@
 $(document).ready(function() {
 
 // Your code here...
+var firstNumber = $("#first-number");
+var secondNumber = $("#second-number");
+var operator = $("#operator");
+var result = $("#result");
 
+var buttonPlus = $("button-plus");
+var buttonMinus = $("#button-minus");
+var buttonMultiply = $("#button-multiply");
+var buttonDivide = $("#button-divide");
+var buttonPower = $("#button-power");
+var buttonEqual = $("button-equal");
+
+var buttonNum = $(".button-primary");
+
+
+
+// when 'clear' button is pressed, clear the element with the id 'result'
+var clearBtn = $("#button-clear");
+var resultEl = $("#result");
+clearBtn.click(function(){
+  resultEl.empty();
+});
 
 });
 
