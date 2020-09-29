@@ -77,34 +77,37 @@
 
   <script type="text/javascript">
 
-    $(document).ready(function () {
+  $(document).ready(function() {
 
-      // Your code here...
-      var firstNum = $("#first-number");
-      var primNumBtn = $(".btn-primary");
-      primNumBtn.click(function () {
-        text.firstNum += primNumBtn.value;
-      });
-        //various variables which refer to certain elements in the HTML
-        var firstNumber = $("#first-number");
-        var secondNumber = $("#second-number");
-        var operator = $("#operator");
-        var resultEl = $("#result");
+    //various variables which refer to certain elements in the HTML
+    var firstNumber = $("#first-number");
+    var secondNumber = $("#second-number");
+    var operator = $("#operator");
+    var resultEl = $("#result");
 
-        var buttonOperator = $(".operator");
+    var buttonOperator = $(".operator");
 
-        var buttonPlus = $("button-plus");
-        var buttonMinus = $("#button-minus");
-        var buttonMultiply = $("#button-multiply");
-        var buttonDivide = $("#button-divide");
-        var buttonPower = $("#button-power");
-
-        var buttonEqual = $("#button-equal");
-
-        var buttonNum = $(".btn-primary");
+    var buttonPlus = $("button-plus");
+    var buttonMinus = $("#button-minus");
+    var buttonMultiply = $("#button-multiply");
+    var buttonDivide = $("#button-divide");
+    var buttonPower = $("#button-power");
 
 
+    var buttonNum = $(".btn-primary");
 
+    var buttonEqual = $("#button-equal");
+
+
+    // Updating first number with each num-btn press - Umut
+    buttonNum.click(function(){
+      var pressedDigit = $(this).attr("value");
+      console.log(pressedDigit);
+      firstNumber.innerHTML += pressedDigit;
+      
+    });
+
+<<<<<<< HEAD
         // when 'clear' button is pressed, clear the element with the id 'result'
         var clearBtn = $("#button-clear");
         var resultEl = $("#result");
@@ -115,6 +118,19 @@
     });
     
     
+=======
+
+    // when 'clear' button is pressed, clear the element with the id 'result'
+    var clearBtn = $("#button-clear");
+    
+
+    clearBtn.click(function () {
+      resultEl.empty();
+    });
+
+  });
+
+>>>>>>> 4aec331bf2aeb2ae698d9afaabb91466730551c9
   </script>
 
 </body>
