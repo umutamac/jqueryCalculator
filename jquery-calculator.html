@@ -76,13 +76,6 @@
 <script type="text/javascript">
 
 $(document).ready(function() {
-
-  // Your code here...
-  var firstNum = $("#first-number");
-  var primNumBtn = $(".btn-primary");
-  primNumBtn.click(function(){
-    text.firstNum += primNumBtn.value;
-
 //various variables
 var firstNumber = $("#first-number");
 var secondNumber = $("#second-number");
@@ -99,9 +92,15 @@ var buttonPower = $("#button-power");
 
 var buttonEqual = $("#button-equal");
 
-var buttonNum = $(".button-primary");
+var buttonNum = $(".btn-primary");
 
-
+// Updating first number with each num-btn press
+buttonNum.click(function(){
+  var pressedDigit = $(this).attr("value");
+  console.log(pressedDigit);
+  firstNumber.innerHTML += pressedDigit;
+  
+});
 
 // when 'clear' button is pressed, clear the element with the id 'result'
 var clearBtn = $("#button-clear");
@@ -111,9 +110,8 @@ clearBtn.click(function(){
 });
 
 
-  });
-    
 });
+    
 
 
 
