@@ -1,0 +1,38 @@
+click number -> save number, put textcontent in its div, 
+as soon as there is textcontent, it will get displayed automatically
+(if  click on number again, merge the strings to make a 2 digit number)
+
+click on operation -> save the operation, put textcontent in its div, 
+as soon as there is textcontent, it will get displayed automatically
+(if  click on number again, clear the old one and save the new one)
+
+click on 2nd number -> save that, put textcontent in its div,
+ as soon as there is textcontent, it will get displayed automatically
+(if  click on number again, merge the strings to make a 2 digit number)
+
+
+click = -> execute & save the result, put textcontent in its div and show the div
+
+clear -> empty local storage, empth text contents of divs on the side
+
+
+-------------------------
+us,ng variables,
+keep track of number one with id="first number"
+
+keep track of the operation
+
+keep track of number one with id="first number"
+
+keep track of the result
+
+
+on-click for all number buttons
+on-click for operations
+on click for =
+on click for clear
+
+on("click",function(){
+
+}
+first number
