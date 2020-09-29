@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>jQuery Calculator</title>
+  <meta charset="UTF-8">
+  <title>jQuery Calculator</title>
 
-    <!-- Added link to the jQuery Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Added a link to Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-    <!-- Added a link to our external stylesheet-->
-    <link rel="stylesheet" href="style.css">
+  <!-- Added a link to our external stylesheet-->
+  <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
-<!-- Jumbotron for Title -->
-<div class="jumbotron">
+  <!-- Jumbotron for Title -->
+  <div class="jumbotron">
     <h1 class="text-center">jQuery Calculator</h1>
     <h3 class="text-center">Perform basic mathematic operations using the power of jQuery!</h3>
-</div>
+  </div>
 
-<div class="container">
+  <div class="container">
 
     <div class="row">
 
@@ -73,42 +75,44 @@
     </div>
   </div>
 
-<script type="text/javascript">
+  <script type="text/javascript">
 
-$(document).ready(function() {
+    $(document).ready(function () {
 
-// Your code here...
+      // Your code here...
 
-//various variables
-var firstNumber = $("#first-number");
-var secondNumber = $("#second-number");
-var operator = $("#operator");
-var result = $("#result");
+      //various variables which refer to certain elements in the HTML
+      var firstNumber = $("#first-number");
+      var secondNumber = $("#second-number");
+      var operator = $("#operator");
+      var resultEl = $("#result");
 
-var buttonOperator = $(".operator");
+      var buttonOperator = $(".operator");
 
-var buttonPlus = $("button-plus");
-var buttonMinus = $("#button-minus");
-var buttonMultiply = $("#button-multiply");
-var buttonDivide = $("#button-divide");
-var buttonPower = $("#button-power");
+      var buttonPlus = $("button-plus");
+      var buttonMinus = $("#button-minus");
+      var buttonMultiply = $("#button-multiply");
+      var buttonDivide = $("#button-divide");
+      var buttonPower = $("#button-power");
 
-var buttonEqual = $("#button-equal");
+      var buttonEqual = $("#button-equal");
 
-var buttonNum = $(".button-primary");
+      var buttonNum = $(".btn-primary");
 
 
 
-// when 'clear' button is pressed, clear the element with the id 'result'
-var clearBtn = $("#button-clear");
-var resultEl = $("#result");
-clearBtn.click(function(){
-  resultEl.empty();
-});
+      // when 'clear' button is pressed, clear the element with the id 'result'
+      var clearBtn = $("#button-clear");
+      var resultEl = $("#result");
 
-});
+      clearBtn.click(function () {
+        resultEl.empty();
+      });
 
-</script>
+    });
+
+  </script>
 
 </body>
+
 </html>
